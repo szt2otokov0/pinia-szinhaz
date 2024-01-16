@@ -10,7 +10,8 @@ const currentSzinhaz = ref(szinhazStore.szinhaz['Vígszínház'])
 <div id="szinhazcontainer">
     <h1>Válasszon színházat!</h1>
     <div id="gombcontainer">
-        <button @click="() => currentSzinhaz = szinhazStore.szinhaz[szinhaz.nev]" v-for="szinhaz of szinhazStore.szinhaz" :key="szinhaz.nev">
+        <button @click="() => currentSzinhaz = szinhazStore.szinhaz[szinhaz.nev]" v-for="szinhaz of szinhazStore.szinhaz"
+             :key="szinhaz.nev">
             {{ szinhaz.nev }}
         </button>
     </div>
